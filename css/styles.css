@@ -105,9 +105,10 @@ nav {
 .list-studio {
   font-size: 14px;
   font-family: var(--font);
+  /*
   font-weight: 500;
   line-height: 1.14;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.02em;*/
   color: var(--color-title);
 }
 .list-studio:hover,
@@ -137,8 +138,20 @@ nav {
   margin-top: 28.3px;
   opacity: 0;
 }
-.line-button:focus::after
+.line-button:focus::after,
 .line-button:hover::after{
+  opacity: 1;
+}
+.page-line-btn::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  width: 100%;
+  background: #2196f3;
+  border-radius: 2px;
+  height: 4px;
+  margin-top: 28.3px;
   opacity: 1;
 }
 .con-list{
